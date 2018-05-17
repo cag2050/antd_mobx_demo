@@ -16,25 +16,25 @@ export default [
             return <Bundle {...props} load={() => import('./components/InputDemo')}/>;
         }
     },
-    // {
-    //     path: '/private_route',
-    //     exact: true,
-    //     component(props) {
-    //         return <Bundle {...props} load={() => import('./components/PrivateRouteDemo')}/>;
-    //     }
-    // },
-    // {
-    //     path: '/table',
-    //     exact: true,
-    //     component(props) {
-    //         return <Bundle {...props} load={() => import('./components/tableDemo/TableDemo')}/>;
-    //     }
-    // },
-    // {
-    //     path: '/component',
-    //     exact: true,
-    //     component(props) {
-    //         return <Bundle {...props} load={() => import('./components/componentDemo')}/>;
-    //     }
-    // }
+    {
+        path: '/private_route',
+        exact: true,
+        component(props) {
+            return <Bundle {...props} load={() => import('./components/PrivateRouteDemo')}/>;
+        }
+    },
+    {
+        path: '/table',
+        exact: true,
+        component(props) {
+            return <Bundle {...props} load={() => import('./components/tableDemo/TableDemo')}/>;
+        }
+    },
+    {
+        path: '/component',
+        exact: true,
+        component(props) {
+            return <Bundle {...props} load={() => import('./components/componentDemo')}/>;
+        }
+    }
 ];
