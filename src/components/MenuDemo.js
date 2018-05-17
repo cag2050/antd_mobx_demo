@@ -43,6 +43,11 @@ const MenuDemo = withRouter(({history}) => {
                     <span>mobx 双向绑定</span>
                     <NavLink to='/mobx_vm'></NavLink>
                 </Menu.Item>
+                <Menu.Item key="/mobx_computed">
+                    <Icon type="video-camera"/>
+                    <span>mobx的computed</span>
+                    <NavLink to='/mobx_computed'></NavLink>
+                </Menu.Item>
             </Menu>
         </div>
     )

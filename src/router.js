@@ -24,6 +24,13 @@ export default [
         }
     },
     {
+        path: '/mobx_computed',
+        exact: true,
+        component(props) {
+            return <Bundle {...props} load={() => import('./components/mobx/ComputedDemo')}/>;
+        }
+    },
+    {
         path: '/private_route',
         exact: true,
         component(props) {
