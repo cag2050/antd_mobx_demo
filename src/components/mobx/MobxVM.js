@@ -20,6 +20,7 @@ class MobxVM extends React.Component {
             </div>
         )
     }
+
     componentDidMount() {
         console.log('vm.inputValue')
         console.log(vm.inputValue)
