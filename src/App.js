@@ -4,13 +4,13 @@ import MyLayout from './components/MyLayout'
 import {withRouter} from 'react-router'
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <MyLayout/>
-      </div>
-    );
-  }
+    render() {
+        return (
+            <div className="App">
+                <MyLayout/>
+            </div>
+        );
+    }
 }
 
 export default withRouter(App);
