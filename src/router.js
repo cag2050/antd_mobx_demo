@@ -36,5 +36,12 @@ export default [
         component(props) {
             return <Bundle {...props} load={() => import('./components/componentDemo')}/>;
         }
+    },
+    {
+        path: '/form_rule',
+        exact: true,
+        component(props) {
+            return <Bundle {...props} load={() => import('./components/form/ExportForm')}/>;
+        }
     }
 ];
