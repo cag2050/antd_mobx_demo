@@ -7,18 +7,21 @@ import {observer} from 'mobx-react'
 
 @observer
 class InputDemo extends React.Component {
-    @observable inputValue = 'default value'
+    @observable form = {
+        inputValue: 'default value'
+    }
 
     render() {
         return (
             <div>
-                <Input defaultValue={this.inputValue} onChange={this.handleChange} placeholder="Basic usage"></Input>
+                <Input defaultValue={this.form.inputValue} onChange={this.handleChange} placeholder="Basic usage"></Input>
                 {this.inputValue}
             </div>
         )
     }
     handleChange = (e) => {
-        this.inputValue = e.target.value
+        console.log(e.target.value)
+        this.form.inputValue = e.target.value
     }
 
     componentDidMount() {
