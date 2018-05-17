@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
 import MyLayout from './components/MyLayout'
-import {connect} from 'react-redux';
 import {withRouter} from 'react-router'
 
 class App extends Component {
@@ -14,10 +13,4 @@ class App extends Component {
   }
 }
 
-function mapStateToProps(state) {
-  return {
-    todos: state.todos
-  };
-}
-
-export default withRouter(connect(mapStateToProps)(App));
+export default withRouter(App);
