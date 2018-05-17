@@ -10,7 +10,6 @@ const vm = new VM()
 
 @binding(vm)
 class MobxVM extends React.Component {
-    // @observable inputValue = 'default value'
 
     render() {
         return (
