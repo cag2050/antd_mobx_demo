@@ -38,6 +38,11 @@ const MenuDemo = withRouter(({history}) => {
                     <span>表单form</span>
                     <NavLink to='/form_rule'></NavLink>
                 </Menu.Item>
+                <Menu.Item key="/mobx_vm">
+                    <Icon type="video-camera"/>
+                    <span>mobx 双向绑定</span>
+                    <NavLink to='/mobx_vm'></NavLink>
+                </Menu.Item>
             </Menu>
         </div>
     )

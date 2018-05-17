@@ -13,7 +13,14 @@ export default [
         path: '/input',
         exact: true,
         component(props) {
-            return <Bundle {...props} load={() => import('./components/InputDemo')}/>;
+            return <Bundle {...props} load={() => import('./components/mobx/InputDemo')}/>;
+        }
+    },
+    {
+        path: '/mobx_vm',
+        exact: true,
+        component(props) {
+            return <Bundle {...props} load={() => import('./components/mobx/MobxVM')}/>;
         }
     },
     {

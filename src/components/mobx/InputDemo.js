@@ -2,7 +2,6 @@ import React from 'react'
 import {Input} from 'antd';
 import {
     observable,
-    // action
 } from 'mobx'
 import {observer} from 'mobx-react'
 
@@ -13,14 +12,19 @@ class InputDemo extends React.Component {
     render() {
         return (
             <div>
-                <Input defaultValue={this.inputValue} placeholder="Basic usage"></Input>
+                <Input defaultValue={this.inputValue} onChange={this.handleChange} placeholder="Basic usage"></Input>
+                {this.inputValue}
             </div>
         )
+    }
+    handleChange = (e) => {
+        this.inputValue = e.target.value
     }
 
     componentDidMount() {
         console.log(this.inputValue)
     }
+
 }
 
 export default InputDemo
