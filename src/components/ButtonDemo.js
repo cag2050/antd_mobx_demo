@@ -3,7 +3,7 @@ import {Button} from 'antd';
 import history from '../projectTools/history'
 
 class ButtonDemo extends React.Component {
-  linkTo = () => {
+  linkTo () {
     history.push('/input')
   }
 

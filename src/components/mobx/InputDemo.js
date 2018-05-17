@@ -14,11 +14,13 @@ class InputDemo extends React.Component {
     render() {
         return (
             <div>
-                <Input defaultValue={this.form.inputValue} onChange={this.handleChange} placeholder="Basic usage"></Input>
+                <Input defaultValue={this.form.inputValue} onChange={this.handleChange}
+                       placeholder="Basic usage"></Input>
                 {this.inputValue}
             </div>
         )
     }
+
     handleChange = (e) => {
         console.log(e.target.value)
         this.form.inputValue = e.target.value
