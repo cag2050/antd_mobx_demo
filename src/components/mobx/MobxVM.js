@@ -1,9 +1,13 @@
 import React from 'react'
-import {Input} from 'antd';
+import {
+    Input,
+    Button
+} from 'antd';
 import {observable, binding} from 'react-mobx-vm'
 
 class VM {
     @observable inputValue = 'default value'
+    @observable currentValue = ''
 }
 
 const vm = new VM()
@@ -17,6 +21,8 @@ class MobxVM extends React.Component {
                 <pre>{JSON.stringify(vm)}</pre>
                 <pre>{vm.inputValue}</pre>
                 <Input data-bind="inputValue" placeholder="Basic usage"></Input>
+                <Button onClick={this.getCurrentValue}>点击获取输入框的当前值</Button>
+                <pre>{vm.currentValue}</pre>
             </div>
         )
     }
@@ -24,6 +30,10 @@ class MobxVM extends React.Component {
     componentDidMount() {
         console.log('vm.inputValue')
         console.log(vm.inputValue)
+    }
+
+    getCurrentValue() {
+        vm.currentValue = vm.inputValue
     }
 }
 
