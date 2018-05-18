@@ -27,7 +27,7 @@ class InputDemo extends React.Component {
     }
 
     componentDidMount() {
-        console.log(this.inputValue)
+        console.log(this.form.inputValue)
     }
 
 }
