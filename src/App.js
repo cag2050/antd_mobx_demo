@@ -4,7 +4,6 @@ import MyLayout from './components/MyLayout'
 import {withRouter} from 'react-router'
 // import DevTools from 'mobx-react-devtools'
 import {Provider} from "mobx-react"
-// import PrivateRouteDemo from "./components/PrivateRouteDemo";
 import stores from './store'
 
 class App extends Component {
