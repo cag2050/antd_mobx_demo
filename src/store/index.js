@@ -1,7 +1,7 @@
 import ChangeNameStore from './modules/ChangeNameStore'
 import CountStore from './modules/CountStore'
 
-export const stores = {
+export default {
     ChangeNameStore,
     CountStore
 }

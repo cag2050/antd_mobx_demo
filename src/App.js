@@ -5,12 +5,12 @@ import {withRouter} from 'react-router'
 // import DevTools from 'mobx-react-devtools'
 import {Provider} from "mobx-react"
 // import PrivateRouteDemo from "./components/PrivateRouteDemo";
-import {stores} from './store'
+import stores from './store'
 
 class App extends Component {
     render() {
         return (
-            <Provider store={stores}>
+            <Provider {...stores}>
                 <div className="App">
                     <MyLayout/>
                     {/*<DevTools/>*/}

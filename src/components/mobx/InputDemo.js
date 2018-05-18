@@ -3,8 +3,13 @@ import {Input} from 'antd';
 import {
     observable,
 } from 'mobx'
-import {observer} from 'mobx-react'
+import {
+    observer,
+    inject
+} from 'mobx-react'
+// import ChangeNameStore from "../../store/modules/ChangeNameStore";
 
+@inject('ChangeNameStore')
 @observer
 class InputDemo extends React.Component {
     @observable form = {
@@ -17,6 +22,8 @@ class InputDemo extends React.Component {
                 <Input defaultValue={this.form.inputValue} onChange={this.handleChange}
                        placeholder="Basic usage"></Input>
                 {this.inputValue}
+                <div>引用provider注入的store（利用context原理）：</div>
+                {this.props.ChangeNameStore.name}
             </div>
         )
     }
