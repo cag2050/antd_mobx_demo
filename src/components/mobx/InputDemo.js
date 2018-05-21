@@ -28,13 +28,14 @@ class InputDemo extends React.Component {
             </div>
         )
     }
+
     @action
     handleChange = (e) => {
         console.log(e.target.value)
         this.form.inputValue = e.target.value
         // 执行store的action
-        // this.props.ChangeNameStore.changeName()
-        this.props.ChangeNameStore.name = 'cag'
+        this.props.ChangeNameStore.changeName()
+        // this.props.ChangeNameStore.name = 'cag'
     }
 
     componentDidMount() {
