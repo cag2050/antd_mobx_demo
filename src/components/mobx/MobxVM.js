@@ -3,7 +3,11 @@ import {
     Input,
     Button
 } from 'antd';
-import {observable, binding} from 'react-mobx-vm'
+import {
+    observable,
+    binding,
+    action
+} from 'react-mobx-vm'
 
 class VM {
     @observable inputValue = 'default value'
@@ -28,10 +32,11 @@ class MobxVM extends React.Component {
     }
 
     componentDidMount() {
-        console.log('vm.inputValue')
+        console.log('vm.inputValue=')
         console.log(vm.inputValue)
     }
 
+    @action
     getCurrentValue() {
         vm.currentValue = vm.inputValue
     }
