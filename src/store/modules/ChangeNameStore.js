@@ -1,4 +1,10 @@
-import {observable, action} from 'mobx'
+import {
+    observable,
+    action,
+    configure
+} from 'mobx'
+
+configure({enforceActions: "strict"});
 
 class ChangeNameStore {
 
