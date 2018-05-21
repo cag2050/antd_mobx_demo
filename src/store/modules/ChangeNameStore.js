@@ -4,6 +4,7 @@ import {
     configure
 } from 'mobx'
 
+// 在严格模式下，不允许在 action 外更改任何状态。 推荐在状态复杂的大型应用中使用严格模式。
 configure({enforceActions: "strict"});
 
 class ChangeNameStore {
