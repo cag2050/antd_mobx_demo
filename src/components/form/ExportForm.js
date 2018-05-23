@@ -7,8 +7,6 @@ function hasErrors(fieldsError) {
 }
 
 class FormDemo extends React.Component {
-    state = {
-    };
 
     componentDidMount() {
         // To disabled submit button at the beginning.

@@ -2,7 +2,7 @@ import React from 'react'
 import {Input} from 'antd';
 import {
     observable,
-    // action
+    action
 } from 'mobx'
 import {
     observer,
@@ -29,13 +29,13 @@ class InputDemo extends React.Component {
         )
     }
 
-    // @action
+    @action
     handleChange = (e) => {
         console.log(e.target.value)
         this.form.inputValue = e.target.value
         // 执行store的action
-        this.props.ChangeNameStore.changeName()
-        // this.props.ChangeNameStore.name = 'cag'
+        // this.props.ChangeNameStore.changeName()
+        this.props.ChangeNameStore.name = 'cag'
     }
 
     componentDidMount() {
