@@ -1,31 +1,43 @@
 import React from 'react'
 import {Table, Button} from 'antd'
 // import './tableDemo.css'
-import './tableDemo.styl'
+// import './tableDemo.styl'
 
 class TableDemo extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
             columnsData: [
-                {title: 'Full NameNameNameNameNameNameNameName', dataIndex: 'name', key: 'name'},
-                {title: 'Age', dataIndex: 'age', key: 'age',},
-                {title: 'Column 1', dataIndex: 'address', key: '1'},
-                {title: 'Column 1', dataIndex: 'address', key: '1'},
-                {title: 'Column 1', dataIndex: 'address', key: '1'},
-                {title: 'Column 1', dataIndex: 'address', key: '1'},
-                {title: 'Column 1', dataIndex: 'address', key: '1'},
-                {title: 'Column 1', dataIndex: 'address', key: '1'},
-                {title: 'Column 1', dataIndex: 'address', key: '1'},
-                {title: 'Column 1', dataIndex: 'address', key: '1'},
-                {title: 'Column 1', dataIndex: 'address', key: '1'},
-                {title: 'Column 1', dataIndex: 'address', key: '1'},
-                {title: 'Column 1', dataIndex: 'address', key: '1'},
-                {title: 'Column 1', dataIndex: 'address', key: '1'},
-                {title: 'Column 1', dataIndex: 'address', key: '1'},
-                {title: 'Column 1', dataIndex: 'address', key: '1'},
-                {title: 'Column 1', dataIndex: 'address', key: '1'},
-                {title: 'Column 1', dataIndex: 'address', key: '1'},
+                {title: 'Full Name', dataIndex: 'name', key: 'name', width: 150},
+                {title: 'Age', dataIndex: 'age', key: 'age', width: 100},
+                {title: 'Age', dataIndex: 'age', key: '1', width: 400},
+                {title: 'Age', dataIndex: 'age', key: '2', width: 100},
+                {title: 'Age', dataIndex: 'age', key: '3', width: 200},
+                {title: 'Age', dataIndex: 'age', key: '4', width: 100},
+                {title: 'Age', dataIndex: 'age', key: '5', width: 100},
+                {title: 'Age', dataIndex: 'age', key: '6', width: 100},
+                {title: 'Age', dataIndex: 'age', key: '7', width: 300},
+                {title: 'Age', dataIndex: 'age', key: '8', width: 100},
+                {title: 'Age', dataIndex: 'age', key: '9', width: 100},
+                {title: 'Age', dataIndex: 'age', key: '10', width: 100},
+                {title: 'Age', dataIndex: 'age', key: '10', width: 100},
+                {title: 'Age', dataIndex: 'age', key: '10', width: 100},
+                {title: 'Age', dataIndex: 'age', key: '10', width: 100},
+                {title: 'Age', dataIndex: 'age', key: '10', width: 100},
+                {title: 'Age', dataIndex: 'age', key: '10', width: 100},
+                {title: 'Age', dataIndex: 'age', key: '10', width: 100},
+                {title: 'Age', dataIndex: 'age', key: '10', width: 100},
+                {title: 'Age', dataIndex: 'age', key: '10', width: 100},
+                {title: 'Age', dataIndex: 'age', key: '10', width: 100},
+                {title: 'Age', dataIndex: 'age', key: '10', width: 100},
+                {title: 'Age', dataIndex: 'age', key: '10', width: 100},
+                {title: 'Age', dataIndex: 'age', key: '10', width: 100},
+                {title: 'Age', dataIndex: 'age', key: '10', width: 100},
+                {title: 'Age', dataIndex: 'age', key: '10', width: 100},
+                {title: 'Age', dataIndex: 'age', key: '11', width: 100},
+                {title: 'Age', dataIndex: 'age', key: '12', width: 500},
+                {title: 'Age', dataIndex: 'age', key: '13', width: 100},
+                {title: 'Age', dataIndex: 'age', key: '14'},
             ],
             dataSourceData: []
         }
@@ -62,8 +74,8 @@ class TableDemo extends React.Component {
                 <Table
                     dataSource={this.state.dataSourceData}
                     columns={this.state.columnsData}
-                    scroll={{x: true, y: 300}}
-                    // scroll={{x: 100, y: 300}}
+                    // scroll={{x: true, y: 300}}
+                    scroll={{x: 100, y: 300}}
                 />
             </div>
         )
