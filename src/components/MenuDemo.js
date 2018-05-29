@@ -48,6 +48,11 @@ const MenuDemo = withRouter(({history}) => {
                     <span>mobx的computed</span>
                     <NavLink to='/mobx_computed'></NavLink>
                 </Menu.Item>
+                <Menu.Item key="/mobx_router">
+                    <Icon type="video-camera"/>
+                    <span>mobx结合router</span>
+                    <NavLink to='/mobx_router'></NavLink>
+                </Menu.Item>
             </Menu>
         </div>
     )

@@ -57,5 +57,12 @@ export default [
         component(props) {
             return <Bundle {...props} load={() => import('./components/form/ExportForm')}/>;
         }
+    },
+    {
+        path: '/mobx_router',
+        exact: true,
+        component(props) {
+            return <Bundle {...props} load={() => import('./components/mobx_router/MobxRouterDemo')}/>;
+        }
     }
 ];

@@ -3,18 +3,18 @@ import './App.css';
 import MyLayout from './components/MyLayout'
 import {withRouter} from 'react-router'
 // import DevTools from 'mobx-react-devtools'
-import {Provider} from "mobx-react"
-import stores from './store'
+// import {Provider} from "mobx-react"
+// import stores from './store'
 
 class App extends Component {
     render() {
         return (
-            <Provider {...stores}>
+            //<Provider {...stores}>
                 <div className="App">
                     <MyLayout/>
                     {/*<DevTools/>*/}
                 </div>
-            </Provider>
+            //</Provider>
         );
     }
 }
