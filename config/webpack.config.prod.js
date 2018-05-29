@@ -154,7 +154,7 @@ module.exports = {
                         },
                     },
                     {
-                        test: /\.stylus$/,
+                        test: /\.styl$/,
                         loader: ExtractTextPlugin.extract(
                             Object.assign(
                                 {

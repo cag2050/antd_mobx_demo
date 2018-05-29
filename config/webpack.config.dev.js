@@ -152,7 +152,7 @@ module.exports = {
                         },
                     },
                     {
-                        test: /\.stylus$/,
+                        test: /\.styl$/,
                         use: [
                             require.resolve('style-loader'),
                             require.resolve('css-loader'),

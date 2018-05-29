@@ -1,9 +1,0 @@
-.ant-table th {
-  width: 100px;
-  white-space: nowrap;
-}
-
-.ant-table td {
-  white-space: nowrap;
-  width: 100px;
-}

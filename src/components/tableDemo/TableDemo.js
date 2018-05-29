@@ -1,15 +1,30 @@
 import React from 'react'
 import {Table, Button} from 'antd'
 // import './tableDemo.css'
-import './tableDemo.stylus'
+import './tableDemo.styl'
 
 class TableDemo extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
             columnsData: [
-                {title: 'Full Name', dataIndex: 'name', key: 'name'},
+                {title: 'Full NameNameNameNameNameNameNameName', dataIndex: 'name', key: 'name'},
                 {title: 'Age', dataIndex: 'age', key: 'age',},
+                {title: 'Column 1', dataIndex: 'address', key: '1'},
+                {title: 'Column 1', dataIndex: 'address', key: '1'},
+                {title: 'Column 1', dataIndex: 'address', key: '1'},
+                {title: 'Column 1', dataIndex: 'address', key: '1'},
+                {title: 'Column 1', dataIndex: 'address', key: '1'},
+                {title: 'Column 1', dataIndex: 'address', key: '1'},
+                {title: 'Column 1', dataIndex: 'address', key: '1'},
+                {title: 'Column 1', dataIndex: 'address', key: '1'},
+                {title: 'Column 1', dataIndex: 'address', key: '1'},
+                {title: 'Column 1', dataIndex: 'address', key: '1'},
+                {title: 'Column 1', dataIndex: 'address', key: '1'},
+                {title: 'Column 1', dataIndex: 'address', key: '1'},
+                {title: 'Column 1', dataIndex: 'address', key: '1'},
+                {title: 'Column 1', dataIndex: 'address', key: '1'},
+                {title: 'Column 1', dataIndex: 'address', key: '1'},
                 {title: 'Column 1', dataIndex: 'address', key: '1'},
             ],
             dataSourceData: []
