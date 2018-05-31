@@ -1,13 +1,20 @@
 import React from 'react'
-import {Menu, Icon} from 'antd';
-import {NavLink, withRouter} from 'react-router-dom'
+import {
+    Menu,
+    Icon
+} from 'antd';
+import {
+    NavLink,
+    withRouter
+} from 'react-router-dom'
+// import {withRouter} from 'react-router'
 
 // 这是一个 无状态组件，使用的是 函数式组件 的写法。
 // React.js 非常鼓励无状态组件，在 0.14 版本引入了函数式组件——一种定义不能使用 state 组件
 const MenuDemo = withRouter(({history}) => {
     return (
         <div>
-            <Menu theme="dark" mode="inline" defaultSelectedKeys={['/']} selectedKeys={[history.location.pathname]}>
+            <Menu theme="dark" mode="inline" defaultSelectedKeys={['/']} selectedKeys={[history.location.pathname]} onOpenChange={this.onOpenChange}>
                 <Menu.Item key="/">
                     <Icon type="user"/>
                     <span>button</span>
@@ -58,4 +65,4 @@ const MenuDemo = withRouter(({history}) => {
     )
 })
 
-export default MenuDemo
+export default withRouter(MenuDemo)

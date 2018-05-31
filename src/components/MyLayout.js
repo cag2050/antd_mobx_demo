@@ -4,7 +4,7 @@ import {
     Switch,
 } from 'react-router-dom'
 import router from '../router';
-import MenuDemo from './MenuDemo'
+import MenuDemo from './menu/MenuDemo'
 import PrivateRoute from '../projectTools/PrivateRoute'
 import {withRouter} from "react-router";
 // import history from "../projectTools/history";

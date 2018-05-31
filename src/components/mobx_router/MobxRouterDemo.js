@@ -12,9 +12,6 @@ class MobxRouterDemo extends React.Component {
             goBack
         } = this.props.routingStore;
 
-        console.log(location.pathname)
-        console.log(location)
-
         return (
             <div>
                 <div>{location.pathname}</div>
