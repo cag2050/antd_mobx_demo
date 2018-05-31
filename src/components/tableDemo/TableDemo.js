@@ -57,9 +57,8 @@ class TableDemo extends React.Component {
 
     render() {
         return (
-            <div className='table_container'>
+            <div id='table_container'>
                 <Table
-                    // style={{width:'100%'}}
                     dataSource={this.state.dataSourceData}
                     columns={this.state.columnsData}
                     bordered
