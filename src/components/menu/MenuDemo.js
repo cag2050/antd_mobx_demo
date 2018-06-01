@@ -20,7 +20,7 @@ class MenuDemo extends React.Component {
     onOpenChange = (openKeys) => {
         const latestOpenKey = openKeys.find(key => this.state.openKeys.indexOf(key) === -1);
         if (this.rootSubmenuKeys.indexOf(latestOpenKey) === -1) {
-            this.setState({ openKeys });
+            this.setState({openKeys});
         } else {
             this.setState({
                 openKeys: latestOpenKey ? [latestOpenKey] : [],
@@ -34,7 +34,7 @@ class MenuDemo extends React.Component {
                 {/*<Menu theme="light" mode="inline" defaultSelectedKeys={['/']} selectedKeys={[this.props.history.location.pathname]} onOpenChange={this.onOpenChange}>*/}
                 <Menu theme="dark" mode="inline" openKeys={this.state.openKeys}
                       onOpenChange={this.onOpenChange}>
-                    <SubMenu key="sub1" title={<span><Icon type="mail" /><span>antd 组件例子</span></span>}>
+                    <SubMenu key="sub1" title={<span><Icon type="mail"/><span>antd 组件例子</span></span>}>
                         <Menu.Item key="1">
                             <Icon type="user"/>
                             <span>button</span>
@@ -66,7 +66,7 @@ class MenuDemo extends React.Component {
                             <NavLink to='/form_rule'></NavLink>
                         </Menu.Item>
                     </SubMenu>
-                    <SubMenu key="sub4" title={<span><Icon type="setting" /><span>mobx 使用</span></span>}>
+                    <SubMenu key="sub4" title={<span><Icon type="setting"/><span>mobx 使用</span></span>}>
                         <Menu.Item key="/mobx_vm">
                             <Icon type="video-camera"/>
                             <span>mobx 双向绑定</span>
