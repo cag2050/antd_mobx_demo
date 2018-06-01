@@ -12,10 +12,13 @@ import './menu.styl'
 const SubMenu = Menu.SubMenu;
 
 class MenuDemo extends React.Component {
-    rootSubmenuKeys = ['sub1', 'sub2', 'sub4'];
     state = {
-        openKeys: ['sub1'],
+        openKeys: ['sub2'],
     };
+    rootSubmenuKeys = ['sub1', 'sub2', 'sub3', 'sub4'];
+
+    componentDidMount() {
+    }
 
     onOpenChange = (openKeys) => {
         const latestOpenKey = openKeys.find(key => this.state.openKeys.indexOf(key) === -1);
@@ -31,9 +34,11 @@ class MenuDemo extends React.Component {
     render() {
         return (
             <div>
-                {/*<Menu theme="light" mode="inline" defaultSelectedKeys={['/']} selectedKeys={[this.props.history.location.pathname]} onOpenChange={this.onOpenChange}>*/}
                 <Menu theme="dark" mode="inline" openKeys={this.state.openKeys}
-                      onOpenChange={this.onOpenChange}  defaultSelectedKeys={['/']} selectedKeys={[this.props.history.location.pathname]}>
+                      onOpenChange={this.onOpenChange} defaultSelectedKeys={['/']}
+                      selectedKeys={[this.props.history.location.pathname]}>
+                    {/*<Menu theme="dark" mode="inline" openKeys={this.state.openKeys}*/}
+                    {/*onOpenChange={this.onOpenChange}  defaultSelectedKeys={['/']} selectedKeys={[this.props.history.location.pathname]}>*/}
                     <SubMenu key="sub1" title={<span><Icon type="mail"/><span>antd 组件</span></span>}>
                         <Menu.Item key="/">
                             <Icon type="user"/>
