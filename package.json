@@ -118,6 +118,7 @@
         "extends": "react-app"
     },
     "devDependencies": {
-        "source-map-explorer": "^1.5.0"
+        "source-map-explorer": "^1.5.0",
+        "webpack-bundle-analyzer": "^2.13.1"
     }
 }
