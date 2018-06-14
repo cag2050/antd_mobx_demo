@@ -61,7 +61,8 @@
     "scripts": {
         "dev": "node scripts/start.js",
         "build": "node scripts/build.js",
-        "test": "node scripts/test.js --env=jsdom"
+        "test": "node scripts/test.js --env=jsdom",
+        "analyze": "source-map-explorer dist/static/js/main.*"
     },
     "jest": {
         "collectCoverageFrom": [
