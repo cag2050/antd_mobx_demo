@@ -69,7 +69,7 @@ class MyLayout extends React.Component {
                         <Button onClick={this.logout}
                                 style={{float: 'right', top: '15px', position: 'relative', right: '-35px'}}>退出</Button>
                     </Header>
-                    <Content style={{margin: '24px 16px', padding: 24, background: '#fff', minHeight: 280}}>
+                    <Content style={{margin: '10px', padding: 10, background: '#fff', minHeight: 280}}>
                         <Switch>
                             {router.map((route, i) => <PrivateRoute key={i} exact={!!route.exact} path={route.path}
                                                                     component={route.component}/>)}

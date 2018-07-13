@@ -92,6 +92,11 @@ class MenuDemo extends React.Component {
                             <NavLink to='/mobx_vm'></NavLink>
                         </Menu.Item>
                     </SubMenu>
+                    <Menu.Item key="/gaea_editor">
+                        <Icon type="video-camera"/>
+                        <span>gaea_editor</span>
+                        <NavLink to='/gaea_editor'></NavLink>
+                    </Menu.Item>
                 </Menu>
             </div>
         )

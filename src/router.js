@@ -64,5 +64,12 @@ export default [
         component(props) {
             return <Bundle {...props} load={() => import('./components/mobx_router/MobxRouterDemo')}/>;
         }
+    },
+    {
+        path: '/gaea_editor',
+        exact: true,
+        component(props) {
+            return <Bundle {...props} load={() => import('./components/gaea_editor/GaeaEditorDemo')}/>;
+        }
     }
 ];
