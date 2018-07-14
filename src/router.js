@@ -78,5 +78,12 @@ export default [
         component(props) {
             return <Bundle {...props} load={() => import('./components/gaea_editor/custom_antd/AntdButton')}/>;
         }
+    },
+    {
+        path: '/hoc',
+        exact: true,
+        component(props) {
+            return <Bundle {...props} load={() => import('./components/react/hoc/EnhancedComponent')}/>;
+        }
     }
 ];

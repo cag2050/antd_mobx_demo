@@ -72,6 +72,11 @@ class MenuDemo extends React.Component {
                             <span>组件写法</span>
                             <NavLink to='/component'></NavLink>
                         </Menu.Item>
+                        <Menu.Item key="/hoc">
+                            <Icon type="video-camera"/>
+                            <span>高阶组件</span>
+                            <NavLink to='/hoc'></NavLink>
+                        </Menu.Item>
                     </SubMenu>
                     <SubMenu key="sub3" title={<span><Icon type="setting"/><span>mobx 使用</span></span>}>
                         <Menu.Item key="/mobx_computed">
