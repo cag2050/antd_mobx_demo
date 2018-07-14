@@ -6,7 +6,7 @@ export default [
         path: '/',
         exact: true,
         component(props) {
-            return <Bundle {...props} load={() => import('./components/ButtonDemo')}/>;
+            return <Bundle {...props} load={() => import('./components/antd/ButtonDemo')}/>;
         }
     },
     {
@@ -34,28 +34,28 @@ export default [
         path: '/private_route',
         exact: true,
         component(props) {
-            return <Bundle {...props} load={() => import('./components/PrivateRouteDemo')}/>;
+            return <Bundle {...props} load={() => import('./components/react/PrivateRouteDemo')}/>;
         }
     },
     {
         path: '/table',
         exact: true,
         component(props) {
-            return <Bundle {...props} load={() => import('./components/tableDemo/TableDemo')}/>;
+            return <Bundle {...props} load={() => import('./components/antd/tableDemo/TableDemo')}/>;
         }
     },
     {
         path: '/component',
         exact: true,
         component(props) {
-            return <Bundle {...props} load={() => import('./components/componentDemo')}/>;
+            return <Bundle {...props} load={() => import('./components/react/componentDemo')}/>;
         }
     },
     {
         path: '/form_rule',
         exact: true,
         component(props) {
-            return <Bundle {...props} load={() => import('./components/form/ExportForm')}/>;
+            return <Bundle {...props} load={() => import('./components/antd/ExportForm')}/>;
         }
     },
     {
@@ -70,6 +70,13 @@ export default [
         exact: true,
         component(props) {
             return <Bundle {...props} load={() => import('./components/gaea_editor/GaeaEditorDemo')}/>;
+        }
+    },
+    {
+        path: '/gaea_antd_button',
+        exact: true,
+        component(props) {
+            return <Bundle {...props} load={() => import('./components/gaea_editor/custom_antd/AntdButton')}/>;
         }
     }
 ];

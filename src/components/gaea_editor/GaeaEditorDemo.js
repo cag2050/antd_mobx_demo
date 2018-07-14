@@ -1,7 +1,7 @@
 import React from 'react'
 import GaeaEditor from 'gaea-editor';
 import BasicComponents from 'gaea-basic-components';
-import AntdButton from './AntdButton'
+// import AntdButton from './custom_antd/AntdButton'
 
 class GaeaEditorDemo extends React.Component {
     constructor(props) {
@@ -14,7 +14,7 @@ class GaeaEditorDemo extends React.Component {
         return (
             <div style={{width: '100vm', height: '85vh'}}>
                 <GaeaEditor
-                    componentClasses={[...BasicComponents, AntdButton]}></GaeaEditor>
+                    componentClasses={[...BasicComponents]}></GaeaEditor>
             </div>
         )
     }

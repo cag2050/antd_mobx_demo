@@ -6,6 +6,7 @@ class componentDemo extends React.Component {
         // 只有一个理由需要传递props作为super()的参数，那就是你需要在构造函数内使用this.props
         // 官方提供学习的例子中都是写成super(props)，所以说写成super(props)是完全没问题的，也建议就直接这样写
         super(props)
+        console.log(props)
         this.state = {
             key1: 'value1'
         }
