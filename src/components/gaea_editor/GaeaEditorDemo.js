@@ -1,6 +1,7 @@
 import React from 'react'
 import GaeaEditor from 'gaea-editor';
-import BasicComponents from 'gaea-basic-components';
+// import BasicComponents from 'gaea-basic-components';
+import BasicComponents from 'cag-basic-components';
 // import AntdButton from './custom_antd/AntdButton'
 
 class GaeaEditorDemo extends React.Component {
